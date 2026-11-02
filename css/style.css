@@ -161,7 +161,7 @@ svg{display:block}
 }
 @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 .hero-inner{position:relative;z-index:2;max-width:640px}
-.hero .lotus-top{width:54px;height:72px;margin:0 auto 8px}
+.hero .vinayaka-icon{display:block;width:60px;height:60px;margin:0 auto 14px}
 .hero .telugu{font-size:1rem;opacity:.9;margin-bottom:22px}
 .eyebrow{font-family:var(--caps);letter-spacing:.38em;font-size:.72rem;color:var(--gold-dark);line-height:2}
 .names{font-weight:400;margin:18px 0 6px;display:flex;flex-direction:column;align-items:center}
@@ -221,7 +221,7 @@ body.opened .hero-anim{animation:heroIn 1.3s var(--ease) forwards;animation-dela
 .schedule{padding:90px 0;text-align:center;background:linear-gradient(180deg,var(--ivory),var(--cream))}
 .event{position:relative;padding:36px 22px 40px;background:#fffaf0;border:1px solid rgba(184,137,58,.6);
   box-shadow:0 20px 40px -22px rgba(107,29,42,.35),inset 0 0 0 6px #fffaf0,inset 0 0 0 7px rgba(184,137,58,.4)}
-.event-icon{width:48px;height:64px;margin:0 auto 10px}
+.event-icon{display:block;width:54px;height:54px;margin:0 auto 10px}
 .event-time{font-family:var(--caps);letter-spacing:.28em;color:var(--gold-dark);font-size:.95rem}
 .event-name{font-family:var(--script);font-weight:400;font-size:clamp(2.8rem,10vw,3.8rem);color:var(--maroon);line-height:1.2;margin:4px 0 6px}
 .event-date{font-family:var(--caps);letter-spacing:.14em;font-size:.82rem;color:var(--ink)}
