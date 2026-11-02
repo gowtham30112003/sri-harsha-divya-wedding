@@ -4,6 +4,7 @@
    ========================================================= */
 :root{
   --envB:24vh;
+  --envH:min(59.31vw,303.45px);
   --ivory:#fbf6ea;
   --cream:#f3e9d2;
   --sand:#ead9b5;
@@ -85,6 +86,7 @@ svg{display:block}
 .env-stars{color:var(--gold-light);letter-spacing:.5em;font-size:.8rem;opacity:.9}
 .env-telugu{font-family:var(--telugu);color:var(--gold-light);font-size:1.15rem;margin-top:14px}
 .env-kicker{font-family:var(--caps);letter-spacing:.4em;color:#f6e6c0;font-size:.7rem;margin-top:8px;text-transform:uppercase}
+.env-vinayaka-icon{display:block;width:48px;height:48px;margin:12px auto 0}
 
 /* envelope body */
 .env-body{
@@ -110,7 +112,7 @@ svg{display:block}
   position:absolute;left:50%;bottom:calc(var(--envB) + 14px);width:min(74vw,370px);transform:translateX(-50%);z-index:2;text-align:center;
   background:var(--ivory);border:1px solid var(--gold);border-radius:4px;padding:22px 10px 18px;
   box-shadow:inset 0 0 0 5px var(--ivory),inset 0 0 0 6px rgba(184,137,58,.6);
-  transition:transform 1.2s var(--ease) .6s;
+  transition:bottom 1.25s var(--ease) .1s,transform 1.25s var(--ease) .1s;
 }
 .env-card .script{font-family:var(--script);font-size:clamp(2rem,8vw,2.8rem);color:var(--maroon);line-height:1.15}
 .env-card .amp{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:1.3rem;line-height:1}
@@ -134,7 +136,7 @@ svg{display:block}
 .envelope-screen.opening .seal{opacity:0;animation:none;pointer-events:none}
 .envelope-screen.opening .tap-hint{opacity:0}
 .envelope-screen.opening .env-flap{transform:rotateX(180deg);opacity:0}
-.envelope-screen.opening .env-card{transform:translate(-50%,-62vh) scale(1.05)}
+.envelope-screen.opening .env-card{bottom:calc(var(--envB) + var(--envH) - 18px);z-index:4;transform:translateX(-50%) scale(1.05)}
 .envelope-screen.done{opacity:0;visibility:hidden;pointer-events:none}
 
 /* =========================================================

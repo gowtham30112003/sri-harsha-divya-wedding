@@ -26,8 +26,8 @@
       toggle.classList.remove('hidden');
       window.scrollTo(0, 0);
       startPetals();
-    }, reduceMotion ? 100 : 1500);
-    setTimeout(function () { envelope.style.display = 'none'; }, reduceMotion ? 400 : 2800);
+    }, reduceMotion ? 100 : 2000);
+    setTimeout(function () { envelope.style.display = 'none'; }, reduceMotion ? 400 : 3200);
   }
   openBtn.addEventListener('click', openInvitation);
   envelope.addEventListener('click', openInvitation);
